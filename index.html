@@ -9,6 +9,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     :root {
@@ -217,6 +218,24 @@
       padding: 70px;
       opacity: 0.7;
     }
+
+    .social-links {
+      margin-top: 25px;
+      display: flex;
+      gap: 25px;
+    }
+
+    .social-links a {
+      color: var(--text-dark);
+      font-size: 26px;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--neon);
+      transform: translateY(-5px);
+      text-shadow: 0 0 20px var(--neon);
+    }
   </style>
 </head>
 
@@ -231,6 +250,13 @@
     <img src="myprofilepic.png" alt="Dev Adhikari" class="profile-pic">
     <h2>Dev <span>Adhikari</span></h2>
     <p class="typing" id="typing"></p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/adkdev200/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/adkdev200/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/adkdev200-ops" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/dev-adhikari-a9b737382/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
 
     <div class="hero-metrics">
       <div class="metric">
