@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dev Adhikari | AI Systems & Backend Engineer</title>
+  <link rel="icon" type="image/png" href="myprofilepic.png">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
     rel="stylesheet">
@@ -92,6 +93,8 @@
       margin-top: 14px;
       font-size: 20px;
       opacity: 0.9;
+      min-height: 1.5em;
+      /* Prevent layout shift */
     }
 
     .hero-metrics {
@@ -109,6 +112,16 @@
 
     .metric p {
       opacity: 0.8;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--neon);
+      box-shadow: 0 0 20px var(--neon-soft);
+      margin-bottom: 20px;
     }
 
     section {
@@ -215,6 +228,7 @@
   </nav>
 
   <section class="hero">
+    <img src="myprofilepic.png" alt="Dev Adhikari" class="profile-pic">
     <h2>Dev <span>Adhikari</span></h2>
     <p class="typing" id="typing"></p>
 
