@@ -213,6 +213,25 @@
       color: var(--bg-dark);
     }
 
+    .btn-download {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      font-size: 16px;
+      color: var(--bg-dark);
+      background: var(--neon);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 0 15px var(--neon-soft);
+      transition: 0.3s;
+    }
+
+    .btn-download:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px var(--neon);
+    }
+
     footer {
       text-align: center;
       padding: 70px;
@@ -258,6 +277,9 @@
       <a href="https://www.linkedin.com/in/dev-adhikari-a9b737382/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
 
+    <a href="Dev_Resume.pdf" download class="btn-download"><i class="fas fa-download" style="margin-right: 8px;"></i>
+      Download Resume</a>
+
     <div class="hero-metrics">
       <div class="metric">
         <h3>AI Systems</h3>
@@ -275,85 +297,89 @@
   </section>
 
   <section>
-    <h2 class="section-title">Engineering Philosophy</h2>
-    <p>
-      I focus on building intelligent systems, not isolated models. My work blends backend engineering discipline with
-      modern AI techniques, ensuring that machine learning models are deployable, scalable, observable, and useful in
-      real-world applications. I prioritize system design, data flow, and long-term maintainability.
+    <h2 class="section-title">Professional Summary</h2>
+    <p style="line-height: 1.8; opacity: 0.9; font-size: 1.1rem;">
+      Highly driven Computer Engineering student at Thapathali Campus (IOE, Tribhuvan University) with deep hands-on
+      expertise in Machine Learning, Deep Learning, Natural Language Processing (NLP), and Generative AI. Proven
+      track record of designing and deploying sophisticated AI-powered systems — from intelligent recommendation
+      engines and real-time computer vision pipelines to full-stack social media platforms and Retrieval-Augmented
+      Generation (RAG) applications. Proficient in leveraging cutting-edge tools including Hugging Face Transformers,
+      Model Context Protocol (MCP) for agentic AI workflows, and FAISS-powered vector search. Passionate about
+      building scalable, production-grade applications that push the boundaries of what AI can deliver.
     </p>
   </section>
 
   <section>
-    <h2 class="section-title">Advanced Technical Expertise</h2>
+    <h2 class="section-title">Core Skills</h2>
     <div class="grid">
       <div class="card">
-        <h3>Backend & APIs</h3>
-        <p>Django, FastAPI, REST, JWT/Auth, async APIs, service separation, AI‑first backend design.</p>
+        <h3>Machine Learning & NLP</h3>
+        <p>Scikit-learn, XGBoost, Hugging Face Transformers, NLTK, spaCy, Sentiment Analysis, NER, SHAP.</p>
       </div>
       <div class="card">
-        <h3>Machine Learning</h3>
-        <p>Classical ML, feature engineering, TF‑IDF, similarity systems, evaluation metrics.</p>
+        <h3>Deep Learning & CV</h3>
+        <p>PyTorch, TensorFlow, CNNs (ResNet, VGG, EfficientNet), Transfer Learning, Image Processing.</p>
       </div>
       <div class="card">
-        <h3>Deep Learning</h3>
-        <p>CNNs, transfer learning, VGG16 fine‑tuning, medical imaging pipelines.</p>
+        <h3>Generative AI & MCP</h3>
+        <p>Agentic AI, Model Context Protocol, LLM APIs, Advanced Prompt Engineering, Injection Defense.</p>
       </div>
       <div class="card">
-        <h3>LLMs & Agentic AI</h3>
-        <p>LangChain, tool‑using agents, memory, planning loops, Hugging Face models.</p>
+        <h3>RAG & Vector Search</h3>
+        <p>FAISS, Semantic Search, Document & Multimedia Indexing, Multimodal Q&A Pipelines.</p>
       </div>
       <div class="card">
-        <h3>RAG Systems</h3>
-        <p>Embeddings, vector similarity search, document chunking, semantic retrieval.</p>
+        <h3>Backend Application</h3>
+        <p>Django, FastAPI, DRF, WebSockets, REST, JWT Auth.</p>
       </div>
       <div class="card">
-        <h3>AI Deployment</h3>
-        <p>Model serving, FastAPI inference layers, integration with production backends.</p>
+        <h3>Database & Env</h3>
+        <p>PostgreSQL, Redis Caching, Cloud-ready deployments on Windows and Linux.</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2 class="section-title">Flagship Projects</h2>
+    <h2 class="section-title">Project Experience</h2>
     <div class="grid">
       <div class="card">
-        <h3>Social Media Platform</h3>
-        <p>Full‑stack Django application with authentication, feeds, scalable data models.</p>
+        <h3>Social Media Application</h3>
+        <p>Built a full-featured backend supporting user profiles, posts, likes, and real-time messaging via WebSockets
+          using Django, DRF, JWT, Redis, and PostgreSQL.</p>
         <a href="https://github.com/adkdev200-ops/MinMed" class="btn-show-code">Show Code</a>
       </div>
       <div class="card">
         <h3>Chat with YouTube Videos</h3>
-        <p>LLM‑powered conversational AI using transcripts, embeddings, and semantic search.</p>
+        <p>Architected a full RAG pipeline that transcribes, chunks, and embeds YouTube content into FAISS for
+          intelligent conversational Q&A using LLMs.</p>
         <a href="notavailable.html" class="btn-show-code">Show Code</a>
       </div>
       <div class="card">
         <h3>Brain Tumor Detection</h3>
-        <p>Healthcare AI system using fine‑tuned VGG16 CNN on MRI datasets.</p>
+        <p>Clinical-grade CNN classifier on MRI scans using ResNet transfer learning, deployed via REST API.</p>
         <a href="notavailable.html" class="btn-show-code">Show Code</a>
       </div>
       <div class="card">
-        <h3>Movie Recommendation Engine</h3>
-        <p>Content‑based recommender built using TF‑IDF vectorization and cosine similarity.</p>
+        <h3>Doppelganger Finder</h3>
+        <p>Real-time facial similarity engine using deep embedding extraction (FaceNet) and FAISS-powered approximate
+          nearest-neighbor search.</p>
+        <a href="notavailable.html" class="btn-show-code">Show Code</a>
+      </div>
+      <div class="card">
+        <h3>Movie Recommendation System</h3>
+        <p>High-performance recommendation engine using collaborative filtering, matrix factorization, and content-based
+          similarity with a scalable REST API.</p>
         <a href="notavailable.html" class="btn-show-code">Show Code</a>
       </div>
     </div>
   </section>
 
   <section>
-    <h2 class="section-title">System Design Strengths</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>AI‑Backend Integration</h3>
-        <p>Designing APIs that serve ML models reliably at scale.</p>
-      </div>
-      <div class="card">
-        <h3>Data Flow Thinking</h3>
-        <p>Understanding how data moves from user input to model inference to output.</p>
-      </div>
-      <div class="card">
-        <h3>Future‑Proof Architecture</h3>
-        <p>Building systems that can evolve as models and tools improve.</p>
-      </div>
+    <h2 class="section-title">Education</h2>
+    <div class="card" style="text-align: center;">
+      <h3>Bachelor of Engineering in Computer Engineering</h3>
+      <p style="margin-top: 10px; opacity: 0.9;">Thapathali Campus, Institute of Engineering (IOE) — Tribhuvan
+        University, Nepal</p>
     </div>
   </section>
 
